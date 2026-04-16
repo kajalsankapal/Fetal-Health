@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | FETALHEALTH.</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="contact-body">
+    <main class="page-frame contact-page">
+        <section class="contact-section">
+            <div class="contact-title">
+                <span>CONTACT</span>
+                <h1>CONTACT US</h1>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">o</div>
+                        <div>
+                            <h2>Location:</h2>
+                            {% for line in contact.location %}
+                                <p>{{ line }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">@</div>
+                        <div>
+                            <h2>Email:</h2>
+                            <p>{{ contact.email }}</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">[]</div>
+                        <div>
+                            <h2>Call:</h2>
+                            <p>{{ contact.call }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="contact-form-row">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                    <input type="text" placeholder="Subject">
+                    <textarea rows="6" placeholder="Message"></textarea>
+                    <button type="button" class="send-button">Send Message</button>
+                </form>
+            </div>
+
+            <a class="scroll-top" href="{{ url_for('home') }}">↑</a>
+        </section>
+    </main>
+</body>
+</html>

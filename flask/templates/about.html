@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | FETALHEALTH.</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="inner-body">
+    <main class="page-frame inner-page">
+        <header class="site-header site-header-pink">
+            <a class="brand" href="{{ url_for('home') }}">FETALHEALTH.</a>
+            <nav class="main-nav">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </nav>
+            <a class="action-button" href="{{ url_for('input_page') }}">Predict</a>
+        </header>
+
+        <section class="about-layout">
+            <div class="about-visual" aria-hidden="true"></div>
+            <article class="about-copy">
+                <p>
+                    Predicting and monitoring Fetal Health is an ML project that involves using machine
+                    learning algorithms to analyse and predict the patterns in the fetal health. Some
+                    pregnancies can be complicated by a medical condition in the mother or a condition that
+                    might affect the health or development of the baby. The prevalence of high-risk
+                    pregnancies is higher in areas of lower resource.
+                </p>
+                <p>
+                    In India, about 20%-30% of pregnancies belong to the high-risk category, which is
+                    responsible for 75% of perinatal morbidity and mortality. If babies with potential
+                    difficulties could be identified, and if there were effective interventions to improve
+                    the outcomes, then an accurate test that could be used during pregnancy could be
+                    beneficial.
+                </p>
+                <p>
+                    Cardiotocography (CTG) is a continuous electronic record of the baby's heart rate
+                    obtained via an ultrasound transducer placed on the mother's abdomen. CTG monitoring is
+                    widely used to assess fetal wellbeing by identifying babies at risk of hypoxia.
+                </p>
+                <p>
+                    A review found that in the antenatal period there is no evidence to suggest that monitoring
+                    women with high-risk pregnancies benefits the mother or baby, although additional research
+                    is needed to provide more information surrounding this practice.
+                </p>
+                <p>
+                    Given the importance and necessity of an effective and reliable method to assess fetal and
+                    mother health, this application focuses on features extracted from CTG exams and classifies
+                    the health of the fetus into meaningful categories.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

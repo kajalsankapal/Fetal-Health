@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images | FETALHEALTH.</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="inner-body">
+    <main class="page-frame inner-page image-placeholder-page">
+        <header class="site-header site-header-pink">
+            <a class="brand" href="{{ url_for('home') }}">FETALHEALTH.</a>
+            <nav class="main-nav">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </nav>
+            <a class="action-button" href="{{ url_for('input_page') }}">Inspect</a>
+        </header>
+
+        <section class="image-placeholder">
+            <h1>Images</h1>
+            <p>The project image gallery can be added here later.</p>
+        </section>
+    </main>
+</body>
+</html>

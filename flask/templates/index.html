@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETALHEALTH.</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home-body">
+    <main class="page-frame hero-page">
+        <section class="hero-panel">
+            <header class="site-header site-header-dark">
+                <a class="brand" href="{{ url_for('home') }}">FETALHEALTH.</a>
+                <nav class="main-nav">
+                    <a href="{{ url_for('home') }}">Home</a>
+                    <a href="{{ url_for('about') }}">About</a>
+                    <a href="{{ url_for('contact') }}">Contact</a>
+                </nav>
+                <a class="action-button" href="{{ url_for('input_page') }}">Inspect</a>
+            </header>
+
+            <div class="hero-copy">
+                <h1>Predict and monitor Fetal Health.</h1>
+                {% if prediction_text %}
+                    <p class="prediction-banner">{{ prediction_text }}</p>
+                {% endif %}
+            </div>
+        </section>
+    </main>
+</body>
+</html>

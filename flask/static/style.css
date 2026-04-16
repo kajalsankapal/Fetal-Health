@@ -1,0 +1,402 @@
+:root {
+    --neon-green: #20f33f;
+    --hot-pink: #ec2c99;
+    --hot-pink-dark: #d11d80;
+    --paper: #ffffff;
+    --ink: #333942;
+    --shadow: 0 14px 40px rgba(72, 72, 72, 0.28);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    background: linear-gradient(180deg, #f7f7f7 0%, #efefef 100%);
+    color: var(--ink);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-frame {
+    width: min(96vw, 1240px);
+    margin: 20px auto;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.hero-page {
+    padding: 26px 26px 42px;
+}
+
+.hero-panel {
+    min-height: 680px;
+    position: relative;
+    background:
+        linear-gradient(rgba(41, 5, 5, 0.25), rgba(41, 5, 5, 0.25)),
+        url("Images/fetal_intestine_immune-1-scaled.jpg") center center / cover no-repeat;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 26px;
+}
+
+.site-header-dark {
+    color: var(--neon-green);
+}
+
+.site-header-pink {
+    background: linear-gradient(90deg, var(--hot-pink) 0%, var(--hot-pink-dark) 100%);
+    color: var(--neon-green);
+    margin: 18px 18px 0;
+    padding: 8px 18px;
+}
+
+.brand {
+    font-size: clamp(1.85rem, 2.4vw, 2.55rem);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
+.action-button {
+    min-width: 86px;
+    text-align: center;
+    padding: 10px 18px;
+    border: 2px solid var(--neon-green);
+    border-radius: 2px;
+    font-size: 0.86rem;
+    font-weight: 700;
+}
+
+.hero-copy {
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px 80px;
+}
+
+.hero-copy h1 {
+    max-width: 620px;
+    margin: 0;
+    color: var(--neon-green);
+    font-size: clamp(2.8rem, 5vw, 4.55rem);
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.prediction-banner {
+    margin: 34px 0 0;
+    color: var(--hot-pink);
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-weight: 800;
+}
+
+.inner-page {
+    min-height: 760px;
+    padding-bottom: 28px;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: minmax(320px, 48%) minmax(320px, 52%);
+    align-items: stretch;
+    min-height: 610px;
+}
+
+.about-visual {
+    background: url("Images/360_F_203711196_8z4LZFImYYP2iqgNI35OrgL6aw81OsAN.jpg") center center / cover no-repeat;
+    min-height: 610px;
+}
+
+.about-copy {
+    padding: 34px 28px 26px 12px;
+    font-size: 0.97rem;
+    line-height: 1.65;
+    color: #6b6f74;
+    overflow: auto;
+    max-height: 610px;
+}
+
+.about-copy p {
+    margin: 0 0 18px;
+}
+
+.inspect-section {
+    padding: 52px 54px 84px;
+    text-align: center;
+}
+
+.inspect-section h1 {
+    margin: 0 0 40px;
+    color: #666c74;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.inspect-form {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 26px 54px;
+    align-items: end;
+    justify-items: center;
+}
+
+.field-card {
+    width: 100%;
+    max-width: 250px;
+    text-align: left;
+}
+
+.field-card span {
+    display: block;
+    margin-bottom: 8px;
+    color: #55585d;
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
+.field-card input {
+    width: 100%;
+    height: 38px;
+    padding: 8px 10px;
+    border: 1px solid #969da5;
+    background: #fff;
+    color: #3f4349;
+}
+
+.submit-button {
+    grid-column: 2;
+    justify-self: center;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 4px;
+    background: #1ea76b;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact-page {
+    min-height: 760px;
+}
+
+.contact-section {
+    position: relative;
+    padding: 34px 38px 72px;
+    min-height: 760px;
+    background: #fff;
+}
+
+.contact-title span {
+    display: block;
+    color: #c7cbd1;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+}
+
+.contact-title h1 {
+    margin: 4px 0 42px;
+    color: #1f252d;
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+}
+
+.contact-details {
+    display: grid;
+    gap: 28px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    background: #44ef49;
+    color: #0d7d18;
+    font-weight: 800;
+    border-radius: 2px;
+    flex: 0 0 34px;
+}
+
+.contact-item h2 {
+    margin: 0 0 8px;
+    color: #2d3138;
+    font-size: 1rem;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #7d848c;
+    font-size: 0.87rem;
+    line-height: 1.7;
+}
+
+.contact-form {
+    display: grid;
+    gap: 16px;
+    align-content: start;
+}
+
+.contact-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #dde2e7;
+    padding: 12px 14px;
+    font: inherit;
+    color: #50555c;
+    resize: vertical;
+}
+
+.send-button {
+    justify-self: center;
+    margin-top: 10px;
+    min-width: 126px;
+    border: 0;
+    padding: 12px 18px;
+    background: #44ef49;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.scroll-top {
+    position: absolute;
+    right: 28px;
+    bottom: 26px;
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    background: #44ef49;
+    color: #0d7d18;
+    font-weight: 800;
+}
+
+.image-placeholder-page {
+    min-height: 520px;
+}
+
+.image-placeholder {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.image-placeholder h1 {
+    margin: 0 0 12px;
+    color: #4d545c;
+    font-size: 2.8rem;
+}
+
+@media (max-width: 980px) {
+    .site-header,
+    .site-header-pink {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-layout,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-copy {
+        padding: 26px 24px 10px;
+        max-height: none;
+    }
+
+    .inspect-form {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+
+    .submit-button {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .page-frame {
+        width: min(100vw, 1240px);
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .hero-page {
+        padding: 0;
+    }
+
+    .hero-panel {
+        min-height: 100vh;
+    }
+
+    .brand {
+        font-size: 1.9rem;
+    }
+
+    .main-nav {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-copy h1 {
+        font-size: 2.5rem;
+    }
+
+    .inspect-section {
+        padding: 38px 22px 56px;
+    }
+
+    .inspect-form,
+    .contact-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 26px 20px 72px;
+    }
+}
