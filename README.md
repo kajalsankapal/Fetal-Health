@@ -10,6 +10,7 @@ Fetal AI is a Flask-based machine learning web application for predicting fetal 
 <img width="1568" height="906" alt="image" src="https://github.com/user-attachments/assets/6df96e03-d91d-459b-a5d7-d8185f5aca69" />
 <img width="1594" height="905" alt="image" src="https://github.com/user-attachments/assets/fdfdad0c-5c45-4014-a4a0-e6f5874ef9f5" />
 <img width="1551" height="901" alt="image" src="https://github.com/user-attachments/assets/6c4bae01-0ab0-42aa-a80d-6813c435f33d" />
+<img width="1562" height="897" alt="image" src="https://github.com/user-attachments/assets/1da97f41-b10a-4e4c-8662-03d63d39a3e1" />
 <img width="1563" height="896" alt="image" src="https://github.com/user-attachments/assets/bed8abfd-5ab8-4a0f-8deb-88f3860b6a8c" />
 
 ## Project Overview
